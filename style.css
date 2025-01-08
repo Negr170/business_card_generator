@@ -1,0 +1,113 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #fff5f8; /* Fond légèrement rose */
+    color: #333;
+}
+
+/* Couleurs principales */
+h1 {
+    color: #ff69b4; /* Rose vif */
+}
+
+button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: #ff85c1;
+}
+
+
+form {
+    margin-bottom: 20px;
+    background-color: #ffe3ed;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    margin: 0 auto;
+}
+#dateTime {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    display: block;
+    margin: 8px auto;
+    padding: 8px;
+    width: 90%;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Carte de visite */
+#cardPreview {
+    border: 2px solid #ff69b4;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: none;
+    width: 280px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#cardPhoto {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cardPreview h2 {
+    margin: 0;
+    color: #ff69b4;
+    font-size: 1.1rem;
+}
+
+#cardPreview p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Copyright */
+footer {
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
